@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="c8f-6x-c9T" customClass="TitleNavigationView" customModule="MovieCloud" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="53"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vN2-wm-4Uy">
+                    <rect key="frame" x="0.0" y="10" width="40" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="5mv-71-Que"/>
+                    </constraints>
+                    <state key="normal" image="back_button"/>
+                    <connections>
+                        <action selector="buttonBackTapped:" destination="c8f-6x-c9T" eventType="touchUpInside" id="Wvg-uS-zmC"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BAŞLIK" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Dm-Jo-uay">
+                    <rect key="frame" x="50" y="10" width="354" height="33"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                    <color key="textColor" name="Button Text Color"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="1KN-vy-sCj"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vN2-wm-4Uy" firstAttribute="top" secondItem="c8f-6x-c9T" secondAttribute="top" constant="10" id="9Zg-NH-7Da"/>
+                <constraint firstItem="1Dm-Jo-uay" firstAttribute="top" secondItem="c8f-6x-c9T" secondAttribute="top" constant="10" id="LSU-Kb-8s0"/>
+                <constraint firstItem="1Dm-Jo-uay" firstAttribute="leading" secondItem="vN2-wm-4Uy" secondAttribute="trailing" constant="10" id="hAd-qJ-neS"/>
+                <constraint firstItem="vN2-wm-4Uy" firstAttribute="leading" secondItem="c8f-6x-c9T" secondAttribute="leading" id="jer-Am-6vD"/>
+                <constraint firstItem="vN2-wm-4Uy" firstAttribute="centerY" secondItem="c8f-6x-c9T" secondAttribute="centerY" id="pwr-Nk-fXk"/>
+                <constraint firstItem="1Dm-Jo-uay" firstAttribute="centerY" secondItem="c8f-6x-c9T" secondAttribute="centerY" id="sRI-Bo-7Lo"/>
+                <constraint firstAttribute="trailing" secondItem="1Dm-Jo-uay" secondAttribute="trailing" constant="10" id="uKM-4G-Yvp"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="labelTitle" destination="1Dm-Jo-uay" id="5a4-8v-JPF"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="116.85267857142857"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back_button" width="23" height="12"/>
+        <namedColor name="Button Text Color">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

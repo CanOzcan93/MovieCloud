@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PersonDetailVC" customModule="MovieCloud" customModuleProvider="target">
+            <connections>
+                <outlet property="imageViewPerson" destination="dki-gc-ihE" id="2JG-af-fnv"/>
+                <outlet property="labelBirthDate" destination="PPa-l3-uwZ" id="WK4-58-vEP"/>
+                <outlet property="labelBirthPlace" destination="HQb-za-tqU" id="OJr-ub-QDR"/>
+                <outlet property="labelMovies" destination="qCO-Yk-m5K" id="T3O-q0-brM"/>
+                <outlet property="labelName" destination="6kH-gJ-xKY" id="bW1-di-SDJ"/>
+                <outlet property="labelPopularity" destination="YO2-cE-qSd" id="VrU-WO-ByA"/>
+                <outlet property="view" destination="iN0-l3-epB" id="bze-4m-CwV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GradientView" customModule="MovieCloud" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jlq-qo-U2M">
+                    <rect key="frame" x="0.0" y="97" width="414" height="765"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="01c-6E-KKN" userLabel="Container View">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="765"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dki-gc-ihE">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="250" id="19H-Rz-s3J"/>
+                                        <constraint firstAttribute="height" constant="250" id="MYt-Ch-z0H"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Liam Neeson" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6kH-gJ-xKY">
+                                    <rect key="frame" x="10" y="260" width="394" height="42"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                    <color key="textColor" name="Button Text Color"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Popülarite: 123" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YO2-cE-qSd">
+                                    <rect key="frame" x="10" y="404" width="394" height="20.5"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                    <color key="textColor" name="Button Text Color"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ayrıca Oynadığı Filmler:  " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCO-Yk-m5K">
+                                    <rect key="frame" x="10" y="434.5" width="394" height="24"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <color key="textColor" name="Button Text Color"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doğum Yeri: Ballymena, County Antrim, Northern Ireland" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQb-za-tqU">
+                                    <rect key="frame" x="10" y="346" width="394" height="48"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <color key="textColor" name="Button Text Color"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doğum Tarihi: 1952-06-07" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PPa-l3-uwZ">
+                                    <rect key="frame" x="10" y="312" width="394" height="24"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                    <color key="textColor" name="Button Text Color"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="HQb-za-tqU" firstAttribute="leading" secondItem="PPa-l3-uwZ" secondAttribute="leading" id="7hg-Z4-g1q"/>
+                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="qCO-Yk-m5K" secondAttribute="bottom" constant="10" id="GOD-F3-m3C"/>
+                                <constraint firstAttribute="trailing" secondItem="6kH-gJ-xKY" secondAttribute="trailing" constant="10" id="KXM-yX-7iF"/>
+                                <constraint firstItem="dki-gc-ihE" firstAttribute="top" secondItem="01c-6E-KKN" secondAttribute="top" id="Lnp-Fs-Ahf"/>
+                                <constraint firstItem="HQb-za-tqU" firstAttribute="top" secondItem="PPa-l3-uwZ" secondAttribute="bottom" constant="10" id="Myl-en-j3a"/>
+                                <constraint firstAttribute="trailing" secondItem="dki-gc-ihE" secondAttribute="trailing" id="QkX-8y-7a6"/>
+                                <constraint firstItem="qCO-Yk-m5K" firstAttribute="top" secondItem="YO2-cE-qSd" secondAttribute="bottom" constant="10" id="T8v-Nf-AWY"/>
+                                <constraint firstItem="YO2-cE-qSd" firstAttribute="leading" secondItem="HQb-za-tqU" secondAttribute="leading" id="U6d-3X-uWL"/>
+                                <constraint firstItem="PPa-l3-uwZ" firstAttribute="trailing" secondItem="6kH-gJ-xKY" secondAttribute="trailing" id="WVs-Du-rxr"/>
+                                <constraint firstItem="dki-gc-ihE" firstAttribute="leading" secondItem="01c-6E-KKN" secondAttribute="leading" id="X3O-OY-XUZ"/>
+                                <constraint firstItem="6kH-gJ-xKY" firstAttribute="leading" secondItem="01c-6E-KKN" secondAttribute="leading" constant="10" id="XQv-wb-707"/>
+                                <constraint firstItem="qCO-Yk-m5K" firstAttribute="leading" secondItem="YO2-cE-qSd" secondAttribute="leading" id="cLV-im-o7l"/>
+                                <constraint firstItem="qCO-Yk-m5K" firstAttribute="trailing" secondItem="YO2-cE-qSd" secondAttribute="trailing" id="eRX-ou-eLA"/>
+                                <constraint firstItem="YO2-cE-qSd" firstAttribute="top" secondItem="HQb-za-tqU" secondAttribute="bottom" constant="10" id="fZ2-ud-28m"/>
+                                <constraint firstItem="PPa-l3-uwZ" firstAttribute="top" secondItem="6kH-gJ-xKY" secondAttribute="bottom" constant="10" id="gMq-Rc-S12"/>
+                                <constraint firstItem="HQb-za-tqU" firstAttribute="trailing" secondItem="PPa-l3-uwZ" secondAttribute="trailing" id="iJ2-O5-5j0"/>
+                                <constraint firstItem="YO2-cE-qSd" firstAttribute="trailing" secondItem="HQb-za-tqU" secondAttribute="trailing" id="mP4-U2-SRY"/>
+                                <constraint firstItem="6kH-gJ-xKY" firstAttribute="top" secondItem="dki-gc-ihE" secondAttribute="bottom" constant="10" id="ms7-xC-DSE"/>
+                                <constraint firstItem="PPa-l3-uwZ" firstAttribute="leading" secondItem="6kH-gJ-xKY" secondAttribute="leading" id="w0w-Dc-ErZ"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="01c-6E-KKN" firstAttribute="centerY" secondItem="Jlq-qo-U2M" secondAttribute="centerY" priority="250" id="9lJ-p1-ulc"/>
+                        <constraint firstItem="01c-6E-KKN" firstAttribute="leading" secondItem="Jlq-qo-U2M" secondAttribute="leading" id="JIO-eY-MoJ"/>
+                        <constraint firstAttribute="trailing" secondItem="01c-6E-KKN" secondAttribute="trailing" id="L99-cG-HJg"/>
+                        <constraint firstAttribute="bottom" secondItem="01c-6E-KKN" secondAttribute="bottom" priority="250" id="cFi-Qg-eSb"/>
+                        <constraint firstItem="01c-6E-KKN" firstAttribute="top" secondItem="Jlq-qo-U2M" secondAttribute="top" id="t7O-7v-xc0"/>
+                        <constraint firstItem="01c-6E-KKN" firstAttribute="centerX" secondItem="Jlq-qo-U2M" secondAttribute="centerX" id="tp0-IU-tVV"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" name="Background Color"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Jlq-qo-U2M" secondAttribute="trailing" id="A13-7o-MD5"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Jlq-qo-U2M" secondAttribute="bottom" id="JWq-oF-FUq"/>
+                <constraint firstItem="Jlq-qo-U2M" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="cYn-l6-eym"/>
+                <constraint firstItem="Jlq-qo-U2M" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="53" id="gVF-Xh-PKp"/>
+            </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                    <color key="value" name="Background Color"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                    <color key="value" name="Background Gradient Color"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="isHorizontal" value="NO"/>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="139" y="117"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Background Color">
+            <color red="0.075000002980232239" green="0.097999997437000275" blue="0.16099999845027924" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Background Gradient Color">
+            <color red="0.15700000524520874" green="0.19599999487400055" blue="0.23899999260902405" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Button Text Color">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

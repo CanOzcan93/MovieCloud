@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GenresCollectionCell" id="ARK-3y-yWY" customClass="GenresCollectionCell" customModule="MovieCloud" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="758"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="upI-Dj-Z0a">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="758"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MJE-Hg-tQ3">
+                        <rect key="frame" x="20" y="20" width="374" height="738"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tableView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="MJE-Hg-tQ3" secondAttribute="bottom" id="2de-6I-RwW"/>
+                    <constraint firstItem="MJE-Hg-tQ3" firstAttribute="centerX" secondItem="upI-Dj-Z0a" secondAttribute="centerX" id="Ecl-bw-vkH"/>
+                    <constraint firstItem="MJE-Hg-tQ3" firstAttribute="top" secondItem="upI-Dj-Z0a" secondAttribute="top" constant="20" id="Kis-yu-IgL"/>
+                    <constraint firstItem="MJE-Hg-tQ3" firstAttribute="leading" secondItem="upI-Dj-Z0a" secondAttribute="leading" constant="20" id="wfk-l9-49d"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="414" height="758"/>
+            <connections>
+                <outlet property="tableView" destination="MJE-Hg-tQ3" id="x5x-8n-bkX"/>
+            </connections>
+            <point key="canvasLocation" x="259.4202898550725" y="85.044642857142847"/>
+        </collectionViewCell>
+    </objects>
+</document>

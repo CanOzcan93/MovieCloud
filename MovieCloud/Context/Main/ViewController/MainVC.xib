@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainVC" customModule="MovieCloud" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonGenre" destination="oFd-0U-xKv" id="HpE-6x-byq"/>
+                <outlet property="buttonMovie" destination="0Ie-Yu-BO5" id="sRi-GK-amP"/>
+                <outlet property="buttonPerson" destination="YHt-Oj-d2f" id="ivC-ak-TJk"/>
+                <outlet property="collectionView" destination="r6v-67-vFK" id="jfG-aF-2VU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="GradientView" customModule="MovieCloud" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="r6v-67-vFK">
+                    <rect key="frame" x="0.0" y="129" width="414" height="733"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MWd-J5-u8B">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="skS-ek-1hW">
+                    <rect key="frame" x="0.0" y="104" width="414" height="25"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ie-Yu-BO5" customClass="PageControlButton" customModule="MovieCloud" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="124.5" height="25"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Filmler">
+                                <color key="titleColor" name="Button Text Color"/>
+                            </state>
+                            <connections>
+                                <action selector="buttonPageControlTapped:" destination="-1" eventType="touchUpInside" id="dkk-ns-9bA"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oFd-0U-xKv" customClass="PageControlButton" customModule="MovieCloud" customModuleProvider="target">
+                            <rect key="frame" x="144.5" y="0.0" width="125" height="25"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Türler">
+                                <color key="titleColor" name="Popup Text Color"/>
+                            </state>
+                            <connections>
+                                <action selector="buttonPageControlTapped:" destination="-1" eventType="touchUpInside" id="xg5-Zq-GLa"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHt-Oj-d2f" customClass="PageControlButton" customModule="MovieCloud" customModuleProvider="target">
+                            <rect key="frame" x="289.5" y="0.0" width="124.5" height="25"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Aktörler">
+                                <color key="titleColor" name="Popup Text Color"/>
+                            </state>
+                            <connections>
+                                <action selector="buttonPageControlTapped:" destination="-1" eventType="touchUpInside" id="hix-YY-YYh"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="3QN-Aw-8fh"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="Background Color"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="r6v-67-vFK" secondAttribute="bottom" id="EwK-ch-WRY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="skS-ek-1hW" secondAttribute="trailing" id="GYF-eX-XaQ"/>
+                <constraint firstItem="r6v-67-vFK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="JWr-dy-Hn6"/>
+                <constraint firstItem="r6v-67-vFK" firstAttribute="top" secondItem="skS-ek-1hW" secondAttribute="bottom" id="O8M-YO-SJQ"/>
+                <constraint firstItem="skS-ek-1hW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="f1X-MB-hnj"/>
+                <constraint firstItem="r6v-67-vFK" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="85" id="vCD-aK-vgL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="r6v-67-vFK" secondAttribute="trailing" id="z2J-Ph-8j6"/>
+            </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                    <color key="value" name="Background Color"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                    <color key="value" name="Background Gradient Color"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="isHorizontal" value="NO"/>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="137.68115942028987" y="116.51785714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Background Color">
+            <color red="0.075000002980232239" green="0.097999997437000275" blue="0.16099999845027924" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Background Gradient Color">
+            <color red="0.15700000524520874" green="0.19599999487400055" blue="0.23899999260902405" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Button Text Color">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Popup Text Color">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

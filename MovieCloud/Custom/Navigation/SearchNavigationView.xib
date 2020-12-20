@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SearchNavigationView" customModule="MovieCloud" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="53"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xmk-MD-bsL">
+                    <rect key="frame" x="30" y="10.5" width="384" height="32"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_mini" translatesAutoresizingMaskIntoConstraints="NO" id="DUP-F0-89p">
+                            <rect key="frame" x="162" y="0.0" width="60" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="DUP-F0-89p" secondAttribute="height" multiplier="15:8" id="QNG-wy-n8k"/>
+                            </constraints>
+                        </imageView>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="07S-Vr-flE">
+                            <rect key="frame" x="15" y="0.0" width="332" height="32"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" name="Button Text Color"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0VF-c9-eoj">
+                            <rect key="frame" x="352" y="0.0" width="32" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="32" id="GQF-7O-910"/>
+                            </constraints>
+                            <state key="normal" image="close"/>
+                            <connections>
+                                <action selector="buttonCancelTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="iog-VN-uqG"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" name="Primary Color"/>
+                    <constraints>
+                        <constraint firstItem="DUP-F0-89p" firstAttribute="centerY" secondItem="Xmk-MD-bsL" secondAttribute="centerY" id="4WP-vM-w4s"/>
+                        <constraint firstItem="07S-Vr-flE" firstAttribute="top" secondItem="Xmk-MD-bsL" secondAttribute="top" id="8v5-hK-Qld"/>
+                        <constraint firstAttribute="bottom" secondItem="07S-Vr-flE" secondAttribute="bottom" id="ByD-9V-82o"/>
+                        <constraint firstItem="0VF-c9-eoj" firstAttribute="leading" secondItem="07S-Vr-flE" secondAttribute="trailing" constant="5" id="SKK-3t-PuH"/>
+                        <constraint firstItem="DUP-F0-89p" firstAttribute="top" secondItem="Xmk-MD-bsL" secondAttribute="top" id="X5K-xQ-MkR"/>
+                        <constraint firstAttribute="trailing" secondItem="0VF-c9-eoj" secondAttribute="trailing" id="Xm9-St-0cB"/>
+                        <constraint firstItem="07S-Vr-flE" firstAttribute="leading" secondItem="Xmk-MD-bsL" secondAttribute="leading" constant="15" id="Yus-nu-Eb6"/>
+                        <constraint firstItem="0VF-c9-eoj" firstAttribute="top" secondItem="Xmk-MD-bsL" secondAttribute="top" id="iEL-i3-LV2"/>
+                        <constraint firstItem="DUP-F0-89p" firstAttribute="centerX" secondItem="Xmk-MD-bsL" secondAttribute="centerX" id="sWp-pN-y3I"/>
+                        <constraint firstAttribute="bottom" secondItem="0VF-c9-eoj" secondAttribute="bottom" id="zbr-qy-Owf"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wlX-K0-izr">
+                    <rect key="frame" x="0.0" y="10.5" width="30" height="32"/>
+                    <state key="normal" image="search"/>
+                    <connections>
+                        <action selector="buttonSearchTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="J41-8w-gkg"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Xmk-MD-bsL" firstAttribute="leading" secondItem="wlX-K0-izr" secondAttribute="trailing" id="ACK-vO-59g"/>
+                <constraint firstItem="wlX-K0-izr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="E7F-Xp-7WZ"/>
+                <constraint firstAttribute="trailing" secondItem="Xmk-MD-bsL" secondAttribute="trailing" id="OXd-9s-7rz"/>
+                <constraint firstItem="wlX-K0-izr" firstAttribute="bottom" secondItem="Xmk-MD-bsL" secondAttribute="bottom" id="T39-oD-Xva"/>
+                <constraint firstItem="Xmk-MD-bsL" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.6" id="dCQ-eM-vL1"/>
+                <constraint firstItem="Xmk-MD-bsL" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="sRM-lq-1HY"/>
+                <constraint firstItem="wlX-K0-izr" firstAttribute="top" secondItem="Xmk-MD-bsL" secondAttribute="top" id="vSi-4K-wUi"/>
+                <constraint firstItem="Xmk-MD-bsL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="y3r-Xo-Ru4"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="buttonCancel" destination="0VF-c9-eoj" id="qT4-78-uON"/>
+                <outlet property="imageLogo" destination="DUP-F0-89p" id="SwC-Xm-bRp"/>
+                <outlet property="textFieldSearch" destination="07S-Vr-flE" id="39l-FO-KNf"/>
+                <outlet property="viewContainer" destination="Xmk-MD-bsL" id="mYH-uB-Jyn"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="116.85267857142857"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="close" width="13" height="13"/>
+        <image name="logo_mini" width="43" height="24"/>
+        <image name="search" width="20" height="22"/>
+        <namedColor name="Button Text Color">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Primary Color">
+            <color red="0.26666666666666666" green="0.84313725490196079" blue="0.71372549019607845" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

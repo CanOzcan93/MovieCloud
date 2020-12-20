@@ -1,0 +1,47 @@
+PODS:
+  - Alamofire (4.9.1)
+  - AlamofireImage (3.6.0):
+    - Alamofire (~> 4.9)
+  - AlamofireObjectMapper (5.2.1):
+    - Alamofire (~> 4.7)
+    - ObjectMapper (~> 3.4)
+  - FLEX (4.1.1)
+  - NVActivityIndicatorView (4.8.0):
+    - NVActivityIndicatorView/Presenter (= 4.8.0)
+  - NVActivityIndicatorView/Presenter (4.8.0)
+  - ObjectMapper (3.5.3)
+  - Observable (2.1.0)
+  - SwiftyJSON (4.3.0)
+
+DEPENDENCIES:
+  - AlamofireImage (~> 3.5)
+  - AlamofireObjectMapper (~> 5.2)
+  - FLEX
+  - NVActivityIndicatorView (~> 4.8.0)
+  - Observable
+  - SwiftyJSON (~> 4.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireImage
+    - AlamofireObjectMapper
+    - FLEX
+    - NVActivityIndicatorView
+    - ObjectMapper
+    - Observable
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AlamofireImage: be9963c6582d68b39e89191f64c82a7d7bf40fdd
+  AlamofireObjectMapper: 1989f690e982b71921b9253f53a4f33a9bc00d88
+  FLEX: 81096107977a09836eb440173010ceeef01105d6
+  NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
+  ObjectMapper: 97111c97e054a6ee25917662106689f0b4127b37
+  Observable: bdfa770fc9d925b997d186b09860a0bcdd6f9690
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+
+PODFILE CHECKSUM: b6c24ea70dcfb88414cd25ec1bde023f1023ed77
+
+COCOAPODS: 1.9.3
